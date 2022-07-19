@@ -1,0 +1,12 @@
+syntax = "proto3";
+package ecostationlabs.ecostationchain.ecostationchain;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/ecostation-labs/ecostation-chain/x/ecostationchain/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

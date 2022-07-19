@@ -1,0 +1,14 @@
+syntax = "proto3";
+package ecostationlabs.ecostationchain.ecostationchain;
+
+import "gogoproto/gogo.proto";
+import "ecostationchain/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/ecostation-labs/ecostation-chain/x/ecostationchain/types";
+
+// GenesisState defines the ecostationchain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
